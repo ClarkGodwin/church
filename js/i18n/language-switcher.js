@@ -53,6 +53,7 @@ export function initializeLanguageSwitcher() {
     document.title = metadata.title;
     document.querySelector('meta[name="description"]')?.setAttribute("content", metadata.description);
     document.querySelector(".lang")?.setAttribute("aria-label", metadata.label);
+    document.querySelector(".hero-actions")?.setAttribute("aria-label", metadata.navigationLabel);
     document.documentElement.lang = language;
     languageButtons.forEach((button) => {
       button.setAttribute("aria-pressed", String(button.dataset.l === language));

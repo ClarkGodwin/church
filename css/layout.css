@@ -6,7 +6,7 @@ section {
 
 h2 {
   margin-bottom: 14px;
-  font-size: clamp(30px, 5.5vw, 44px);
+  font-size: clamp(28px, calc(1.3vw + 24px), 44px);
 }
 
 .lead {
@@ -16,7 +16,7 @@ h2 {
 }
 
 .card {
-  padding: 24px;
+  padding: clamp(16px, 2vw, 24px);
   border: 1px solid var(--line);
   border-radius: 14px;
   background: var(--card);
@@ -31,7 +31,7 @@ h2 {
 .times .big {
   color: var(--blue);
   font-family: Fraunces, Georgia, serif;
-  font-size: 28px;
+  font-size: clamp(22px, calc(0.55vw + 20px), 28px);
   font-weight: 800;
 }
 
@@ -63,7 +63,7 @@ h2 {
 }
 
 .mission p {
-  font-size: 21px;
+  font-size: clamp(17px, calc(0.35vw + 16px), 21px);
 }
 
 .photos {
@@ -87,7 +87,7 @@ h2 {
 .photos figcaption {
   margin-top: 6px;
   color: var(--muted);
-  font-size: 16px;
+  font-size: var(--text-small);
 }
 
 .photos .wide {
@@ -110,7 +110,7 @@ h2 {
 
 .acc h3 {
   margin-bottom: 10px;
-  font-size: 22px;
+  font-size: var(--text-card-title);
 }
 
 .row {
@@ -124,11 +124,11 @@ h2 {
 
 .row span {
   color: var(--muted);
-  font-size: 16px;
+  font-size: var(--text-small);
 }
 
 .row b {
-  font-size: 19px;
+  font-size: var(--text-body);
   text-align: right;
   word-break: break-all;
 }
@@ -142,7 +142,7 @@ h2 {
 .note {
   margin-top: 16px;
   color: var(--muted);
-  font-size: 16px;
+  font-size: var(--text-small);
 }
 
 .ct .btn {
@@ -154,7 +154,7 @@ footer {
   padding: 36px 5vw;
   background: #0f1b3a;
   color: #cfd5ea;
-  font-size: 16px;
+  font-size: var(--text-small);
   text-align: center;
 }
 
@@ -162,7 +162,7 @@ footer > b {
   display: block;
   color: #fff;
   font-family: Fraunces, Georgia, serif;
-  font-size: 21px;
+  font-size: var(--text-card-title);
 }
 
 @media (max-width: 700px) {

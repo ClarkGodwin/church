@@ -144,16 +144,19 @@ export const languageMetadata = {
   fr: {
     title: "EPG – Bujumbura, Burundi",
     description: "Bienvenue à l'EPG, église à Bujumbura, Burundi.",
-    label: "Langue / Language"
+    label: "Langue / Language",
+    navigationLabel: "Navigation principale"
   },
   en: {
     title: "EPG – Bujumbura, Burundi",
     description: "Welcome to EPG, a church in Bujumbura, Burundi.",
-    label: "Language"
+    label: "Language",
+    navigationLabel: "Main navigation"
   },
   kr: {
     title: "EPG – Bujumbura, Uburundi",
     description: "Murakaza neza muri EPG, ishengero riri i Bujumbura mu Burundi.",
-    label: "Ururimi"
+    label: "Ururimi",
+    navigationLabel: "Ukwiyunguruza nyamukuru"
   }
 };

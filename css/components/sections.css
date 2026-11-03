@@ -1,12 +1,12 @@
 .btn {
   display: inline-block;
-  margin: 0 10px 10px 0;
-  padding: 15px 26px;
+  margin: 0;
+  padding: clamp(11px, calc(0.25vw + 11px), 15px) clamp(14px, calc(0.85vw + 11px), 26px);
   border: 0;
   border-radius: 999px;
   background: var(--gold);
   color: #1a1405;
-  font: 700 18px Figtree, sans-serif;
+  font: 700 clamp(15px, calc(0.55vw + 13.2px), 18px) Figtree, sans-serif;
   text-decoration: none;
   cursor: pointer;
 }
@@ -33,5 +33,10 @@
 
 .ct .btn:first-of-type {
   background: #25a244;
+  color: #fff;
+}
+
+.hero .contact-btn {
+  background: var(--green);
   color: #fff;
 }

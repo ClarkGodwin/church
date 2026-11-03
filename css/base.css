@@ -8,6 +8,9 @@
   --card: #fff;
   --line: #e4e1d6;
   --warn: #fff4cf;
+  --text-body: clamp(16px, calc(0.6vw + 14px), 19px);
+  --text-small: clamp(14px, calc(0.4vw + 12.7px), 16px);
+  --text-card-title: clamp(19px, calc(0.55vw + 17.2px), 22px);
   box-sizing: border-box;
   padding-top: env(safe-area-inset-top, 0px);
   padding-bottom: env(safe-area-inset-bottom, 0px);
@@ -49,7 +52,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 19px/1.65 Figtree, system-ui, sans-serif;
+  font: var(--text-body)/1.65 Figtree, system-ui, sans-serif;
 }
 
 img {
