@@ -72,12 +72,12 @@ export function initializeLanguageSwitcher() {
     });
   });
 
-  let savedLanguage = "fr";
+  let savedLanguage = "kr";
   try {
-    savedLanguage = localStorage.getItem(storageKey) ?? "fr";
+    savedLanguage = localStorage.getItem(storageKey) ?? "kr";
   } catch (error) {
     console.warn("La préférence de langue enregistrée ne peut pas être lue.", error);
   }
 
-  setLanguage(savedLanguage === "en" || savedLanguage === "kr" ? savedLanguage : "fr");
+  setLanguage(savedLanguage === "en" || savedLanguage === "fr" ? savedLanguage : "kr");
 }
