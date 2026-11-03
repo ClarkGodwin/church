@@ -67,3 +67,93 @@ export const englishAltText = {
   "L'assemblée réunie pour le culte, la chorale sur l'estrade": "The congregation gathered for worship, with the choir on the platform",
   "Choristes souriants chantant ensemble": "Smiling choir members singing together"
 };
+
+export const kirundiTranslations = {
+  "Murakaza neza · Bienvenue": "Murakaza neza · Mwakiriwe",
+  "« Venez à moi, vous tous qui êtes fatigués et chargés, et je vous donnerai du repos. » (Matthieu 11:28)": "« Nimuze kuri jewe, mwese abananiwe n'abaremerewe, nanje nzobaruhura. » (Matayo 11:28)",
+  "Venir au culte": "Nimuze dusengere hamwe",
+  "Soutenir l'église": "Shigikira ishengero",
+  "Nos cultes": "Amateraniro yacu",
+  "Chaque semaine, nous prions, chantons et écoutons la Parole de Dieu ensemble. Tout le monde est bienvenu.": "Buri ndwi turasenga, turaririmba kandi tukumviriza Ijambo ry'Imana turi kumwe. Umuntu wese arahawe ikaze.",
+  "Culte du dimanche": "Iteraniro ryo ku w'Imana",
+  "08:00 – 11:30": "08:00 – 11:30",
+  "Louange, prédication, enfants, jeunes et adultes.": "Kuramya Imana, inyigisho, abana, urwaruka n'abakuze.",
+  "Prière": "Isengesho",
+  "Mercredi 17:00": "Ku wa gatatu isaha 17:00",
+  "Prière pour l'église, les familles et le pays.": "Dusengera ishengero, imiryango n'igihugu.",
+  "Jeunesse et chorale": "Urwaruka n'umurwi w'abaririmvyi",
+  "Samedi 15:00": "Ku wa gatandatu isaha 15:00",
+  "Répétition et partage pour les jeunes.": "Umwimenyerezo wo kuririmba no gusangira n'urwaruka.",
+  "Où nous trouver": "Aho dusangwa",
+  "Bujumbura, Burundi": "Bujumbura, Uburundi",
+  "Rue / Avenue / Quartier : à compléter": "Ibarabara / Agace : vyuzuzwa",
+  "Voir sur la carte": "Raba ikarata",
+  "Les horaires surlignés sont des exemples à remplacer.": "Ibihe vyashizwe ahabona ni akarorero; bisubirize ibihe nyakuri.",
+  "Jésus vous appelle": "Yezu araguhamagara",
+  "Quelle que soit votre histoire, Jésus vous accueille. Il vous aime, il pardonne et il donne une vie nouvelle.": "Uko ivyawe vyoba vyifashe kwose, Yezu arakwakira. Aragukunda, arakubabarira kandi akaguha ubuzima bushasha.",
+  "Notre mission :": "Intumbero yacu ni:",
+  "annoncer l'Évangile, former les enfants et les jeunes dans la foi, prendre soin des familles et soutenir ceux qui sont dans le besoin.": "Kumenyesha Inkuru Nziza, gufasha abana n'urwaruka gukura mu kwizera, kwitaho imiryango no gufasha abari mu bukene.",
+  "La vie de l'église": "Ubuzima bwo mw'ishengero",
+  "Voici l'ambiance de nos cultes.": "Ng'uku uko amateraniro yacu aba ameze.",
+  "Toute la famille réunie pour le culte.": "Umuryango wose uteraniye hamwe gusenga.",
+  "La chorale des jeunes chante avec joie.": "Umurwi w'abaririmvyi b'urwaruka uririmba unezerewe.",
+  "Écouter la Parole": "Kumviriza Ijambo ry'Imana",
+  "Suivez nos prédications et nos chants, où que vous soyez dans le monde.": "Kurikirana inyigisho n'indirimbo zacu aho uri hose kw'isi.",
+  "▶ Chaîne de la chorale": "▶ Umuyoboro w'umurwi w'abaririmvyi",
+  "(nom à compléter)": "(izina rizokwuzuzwa)",
+  "▶ Prédications": "▶ Inyigisho",
+  "(nom de la chaîne à compléter)": "(izina ry'umuyoboro rizokwuzuzwa)",
+  "Une courte prédication peut être ajoutée ici avec le lien d'une vidéo YouTube.": "Aha hashobora gushirwa inyigisho ngufi hamwe n'umuhuza wa videwo yo kuri YouTube.",
+  "Chaque don aide le culte, la chorale, la jeunesse et les familles dans le besoin. Merci pour votre générosité, du Burundi ou de l'étranger.": "Intererano yose ifasha ibikorwa vy'ishengero, umurwi w'abaririmvyi, urwaruka n'imiryango ikenye. Turabashimira ku mutima wanyu wo gutanga, haba mu Burundi canke mu mahanga.",
+  "Mobile money (Burundi)": "Amafaranga yo kuri telefone (Uburundi)",
+  "Copier": "Kopa",
+  "Nom du compte": "Izina rya konti",
+  "Compte bancaire": "Konti yo muri banki",
+  "Banque": "Banki",
+  "Nom de la banque": "Izina rya banki",
+  "Numéro": "Inomero",
+  "Depuis l'étranger": "Uvuye mu mahanga",
+  "Code SWIFT": "Kode ya SWIFT",
+  "Devise": "Ifaranga",
+  "Indiquez en motif": "Andika ku ntumbero y'ukwishura",
+  "Don pour l'église": "Intererano y'ishengero",
+  "Tous les numéros ci-dessus sont des exemples. Remplacez-les par les coordonnées officielles, au nom de l'église.": "Inomero zose ziri hejuru ni akarorero. Zisubirize amakuru nyayo y'ishengero.",
+  "Nous contacter": "Twandikire",
+  "Écrivez-nous sur WhatsApp ou appelez-nous. Nous répondons avec plaisir.": "Twandikire kuri WhatsApp canke uduhamagare. Tuzokwishura tunezerewe.",
+  "Pasteur": "Umwungere",
+  "Nom": "Izina",
+  "Nom à compléter": "Izina rizokwuzuzwa",
+  "Téléphone": "Telefone",
+  "Appeler": "Hamagara",
+  "EPG (église)": "EPG (ishengero)",
+  "Trésorier (dons)": "Umubitsi (intererano)",
+  "Remplacez les noms et numéros surlignés, puis le lien WhatsApp (wa.me/257 suivi du numéro).": "Subiriza amazina n'inomero vyashizwe ahabona, wongere ushireho umuhuza wa WhatsApp (wa.me/257 ikurikiwe n'inomero).",
+  "Contacts": "Twandikire",
+  "NOM DE L'ÉGLISE": "IZINA RY'ISHENGERO",
+  "ADRESSE COMPLÈTE, RUE ...": "ADERESI YUZUYE, IBARABARA ...",
+  "Photos : PM Studio 001": "Amafoto : PM Studio 001"
+};
+
+export const kirundiAltText = {
+  "Le bâtiment de l'EPG avec sa tour vitrée et son toit rouge": "Inyubakwa y'ishengero EPG ifise umunara w'ibirahure n'igisenge gitukura",
+  "L'assemblée réunie pour le culte, la chorale sur l'estrade": "Abantu bateraniye gusenga, umurwi w'abaririmvyi uri imbere",
+  "Choristes souriants chantant ensemble": "Abaririmvyi bamwenyura baririmbira hamwe"
+};
+
+export const languageMetadata = {
+  fr: {
+    title: "EPG – Bujumbura, Burundi",
+    description: "Bienvenue à l'EPG, église à Bujumbura, Burundi.",
+    label: "Langue / Language"
+  },
+  en: {
+    title: "EPG – Bujumbura, Burundi",
+    description: "Welcome to EPG, a church in Bujumbura, Burundi.",
+    label: "Language"
+  },
+  kr: {
+    title: "EPG – Bujumbura, Uburundi",
+    description: "Murakaza neza muri EPG, ishengero riri i Bujumbura mu Burundi.",
+    label: "Ururimi"
+  }
+};

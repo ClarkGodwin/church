@@ -1,4 +1,10 @@
-import { englishAltText, englishTranslations } from "./translations.js";
+import {
+  englishAltText,
+  englishTranslations,
+  kirundiAltText,
+  kirundiTranslations,
+  languageMetadata
+} from "./translations.js";
 
 const storageKey = "epg-lang";
 
@@ -19,23 +25,34 @@ export function initializeLanguageSwitcher() {
     image,
     french: image.getAttribute("alt") ?? ""
   }));
-  let currentLanguage = "fr";
-
   function setLanguage(language) {
-    currentLanguage = language;
+    const translations = language === "kr"
+      ? kirundiTranslations
+      : language === "en"
+        ? englishTranslations
+        : undefined;
 
     textNodes.forEach(({ node: textNode, french }) => {
       const match = french.match(/^(\s*)([\s\S]*?)(\s*)$/);
       if (!match) return;
 
-      const translation = language === "en" ? englishTranslations[match[2]] : undefined;
+      const translation = translations?.[match[2]];
       textNode.nodeValue = translation ? `${match[1]}${translation}${match[3]}` : french;
     });
 
     images.forEach(({ image, french }) => {
-      image.setAttribute("alt", language === "en" ? englishAltText[french] ?? french : french);
+      const altText = language === "kr"
+        ? kirundiAltText[french]
+        : language === "en"
+          ? englishAltText[french]
+          : undefined;
+      image.setAttribute("alt", altText ?? french);
     });
 
+    const metadata = languageMetadata[language];
+    document.title = metadata.title;
+    document.querySelector('meta[name="description"]')?.setAttribute("content", metadata.description);
+    document.querySelector(".lang")?.setAttribute("aria-label", metadata.label);
     document.documentElement.lang = language;
     languageButtons.forEach((button) => {
       button.setAttribute("aria-pressed", String(button.dataset.l === language));
@@ -49,7 +66,10 @@ export function initializeLanguageSwitcher() {
   }
 
   languageButtons.forEach((button) => {
-    button.addEventListener("click", () => setLanguage(button.dataset.l === "en" ? "en" : "fr"));
+    button.addEventListener("click", () => {
+      const language = button.dataset.l;
+      setLanguage(language === "en" || language === "kr" ? language : "fr");
+    });
   });
 
   let savedLanguage = "fr";
@@ -59,5 +79,5 @@ export function initializeLanguageSwitcher() {
     console.warn("La préférence de langue enregistrée ne peut pas être lue.", error);
   }
 
-  setLanguage(savedLanguage === "en" ? "en" : "fr");
+  setLanguage(savedLanguage === "en" || savedLanguage === "kr" ? savedLanguage : "fr");
 }

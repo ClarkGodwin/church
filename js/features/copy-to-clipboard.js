@@ -5,13 +5,20 @@ export function initializeCopyButtons() {
   document.querySelectorAll(".cp").forEach((button) => {
     button.addEventListener("click", async () => {
       const language = document.documentElement.lang;
-      const failureMessage = language === "en"
-        ? "Copy manually: "
-        : "Copiez à la main : ";
+      const copiedMessage = language === "kr"
+        ? "Vyandukuwe ✓"
+        : language === "en"
+          ? "Copied ✓"
+          : "Copié ✓";
+      const failureMessage = language === "kr"
+        ? "Vyandukure n'amaboko: "
+        : language === "en"
+          ? "Copy manually: "
+          : "Copiez à la main : ";
 
       try {
         await navigator.clipboard.writeText(button.dataset.c ?? "");
-        status.textContent = language === "en" ? "Copied ✓" : "Copié ✓";
+        status.textContent = copiedMessage;
       } catch (error) {
         console.warn("La copie automatique a échoué.", error);
         status.textContent = `${failureMessage}${button.dataset.c ?? ""}`;
