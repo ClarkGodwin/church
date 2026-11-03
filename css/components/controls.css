@@ -1,26 +1,53 @@
+.footer-controls {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 5vw 20px;
+}
+
 .lang {
   display: flex;
   width: fit-content;
-  margin: 24px auto 0 5vw;
+  margin-left: auto;
+  align-items: center;
   padding: 4px;
-  border-radius: 999px;
+  border-radius: 9px;
   background: rgb(10 20 55 / 78%);
   backdrop-filter: blur(6px);
 }
 
 .lang button {
-  padding: clamp(7px, 0.6vw, 8px) clamp(10px, 1vw, 14px);
+  position: relative;
+  min-width: 40px;
+  padding: 8px 10px;
   border: 0;
-  border-radius: 999px;
+  border-radius: 8px;
   background: transparent;
   color: #fff;
-  font: 700 clamp(13px, 1.1vw, 15px) Figtree, sans-serif;
+  font: 700 15px/1 Figtree, sans-serif;
   cursor: pointer;
+}
+
+.lang button + button::before {
+  position: absolute;
+  top: 25%;
+  bottom: 25%;
+  left: 0;
+  width: 1px;
+  background: #45413b;
+  content: "";
 }
 
 .lang button[aria-pressed="true"] {
   background: var(--gold);
   color: #1a1405;
+}
+
+@media (min-width: 1000px) {
+  .footer-controls {
+    max-width: 1400px;
+    padding-right: clamp(40px, 5vw, 72px);
+    padding-left: clamp(40px, 5vw, 72px);
+  }
 }
 
 .cp {

@@ -120,7 +120,7 @@ export const kirundiTranslations = {
   "Tous les numéros ci-dessus sont des exemples. Remplacez-les par les coordonnées officielles, au nom de l'église.": "Inomero zose ziri hejuru ni akarorero. Zisubirize amakuru nyayo y'ishengero.",
   "Nous contacter": "Twandikire",
   "Écrivez-nous sur WhatsApp ou appelez-nous. Nous répondons avec plaisir.": "Twandikire kuri WhatsApp canke uduhamagare. Tuzokwishura tunezerewe.",
-  "Pasteur": "Umwungere",
+  "Pasteur": "Patiri",
   "Nom": "Izina",
   "Nom à compléter": "Izina rizokwuzuzwa",
   "Téléphone": "Telefone",
