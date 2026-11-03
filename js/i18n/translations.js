@@ -61,6 +61,9 @@ export const englishTranslations = {
   "Trésorier (dons)": "Treasurer (gifts)",
   "Remplacez les noms et numéros surlignés, puis le lien WhatsApp (wa.me/257 suivi du numéro).": "Replace the highlighted names and numbers, then the WhatsApp link (wa.me/257 followed by the number).",
   "Contacts": "Contacts",
+  "Kirundi" : "Kirundi",
+  "Francais" : "French",
+  "Anglais" : "English",
   "NOM DE L'ÉGLISE": "CHURCH NAME",
   "ADRESSE COMPLÈTE, RUE ...": "FULL ADDRESS, STREET ...",
   "Photos : PM Studio 001": "Photos: PM Studio 001"
@@ -137,6 +140,9 @@ export const kirundiTranslations = {
   "Trésorier (dons)": "Umubitsi (intererano)",
   "Remplacez les noms et numéros surlignés, puis le lien WhatsApp (wa.me/257 suivi du numéro).": "Subiriza amazina n'inomero vyashizwe ahabona, wongere ushireho umuhuza wa WhatsApp (wa.me/257 ikurikiwe n'inomero).",
   "Contacts": "Twandikire",
+  "Kirundi" : "Ikirundi",
+  "Francais" : "Igifaransa",
+  "Anglais" : "Icongereza",
   "NOM DE L'ÉGLISE": "IZINA RY'ISHENGERO",
   "ADRESSE COMPLÈTE, RUE ...": "ADERESI YUZUYE, IBARABARA ...",
   "Photos : PM Studio 001": "Amafoto : PM Studio 001"
