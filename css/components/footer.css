@@ -46,28 +46,26 @@
   color: #1a1405;
 }
 
-/* Match the wider desktop section container and its horizontal gutters. */
+/* Footer intentionally uses a dark surface distinct from the page background. */
+footer {
+  padding: 36px 5vw;
+  background: #0f1b3a;
+  color: #cfd5ea;
+  font-size: var(--text-small);
+  text-align: center;
+}
+
+footer > b {
+  display: block;
+  color: #fff;
+  font-family: Fraunces, Georgia, serif;
+  font-size: var(--text-card-title);
+}
+
 @media (min-width: 1000px) {
   .footer-controls {
     max-width: 1400px;
     padding-right: clamp(40px, 5vw, 72px);
     padding-left: clamp(40px, 5vw, 72px);
   }
-}
-
-/* Donation copy action and accessible live feedback message. */
-.cp {
-  padding: 6px clamp(7px, 0.7vw, 10px);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--bg);
-  color: var(--ink);
-  font: 600 clamp(12px, 1vw, 14px) Figtree, sans-serif;
-  cursor: pointer;
-}
-
-.copy-status {
-  min-height: 1.5em;
-  color: var(--muted);
-  font-size: var(--text-small);
 }

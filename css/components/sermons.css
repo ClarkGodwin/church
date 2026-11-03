@@ -1,0 +1,15 @@
+.pred {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.pred .btn:first-child {
+  background: #c4302b;
+  color: #fff;
+}
+
+.pred .btn .todo {
+  color: #14213d;
+}

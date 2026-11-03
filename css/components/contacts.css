@@ -1,0 +1,9 @@
+.ct .btn {
+  margin: 14px 8px 0 0;
+  font-size: 17px;
+}
+
+.ct .btn:first-of-type {
+  background: #25a244;
+  color: #fff;
+}

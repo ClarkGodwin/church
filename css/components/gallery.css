@@ -1,0 +1,64 @@
+/* Gallery cards and image sizing; the desktop breakpoint adds framing and hover. */
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.photos figure {
+  margin: 0;
+}
+
+.photos img {
+  width: 100%;
+  height: 100%;
+  min-height: 240px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.photos figcaption {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: var(--text-small);
+}
+
+.photos .wide {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 700px) {
+  .photos {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .photos {
+    gap: 24px;
+  }
+
+  .photos figure {
+    /* Frame each photo as a card while clipping the subtle image zoom. */
+    overflow: hidden;
+    padding: 10px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: var(--card);
+    box-shadow: 0 10px 28px rgb(20 33 61 / 6%);
+  }
+
+  .photos img {
+    height: auto;
+    aspect-ratio: 16 / 10;
+    transition: transform 240ms ease;
+  }
+
+  .photos figure:hover img {
+    transform: scale(1.025);
+  }
+
+  .photos figcaption {
+    padding: 10px 4px 2px;
+  }
+}

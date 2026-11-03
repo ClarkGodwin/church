@@ -1,0 +1,50 @@
+/* Service schedule cards use the shared responsive grid. */
+.times .big {
+  color: var(--blue);
+  font-family: Fraunces, Georgia, serif;
+  font-size: clamp(22px, calc(0.55vw + 20px), 28px);
+  font-weight: 800;
+}
+
+.place {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  gap: 22px;
+  margin-top: 20px;
+}
+
+.place img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.place .btn {
+  background: var(--blue);
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .place {
+    grid-template-columns: 1fr;
+  }
+
+  .place img {
+    max-height: 300px;
+    aspect-ratio: 3 / 2;
+  }
+}
+
+@media (min-width: 1000px) {
+  .place {
+    grid-template-columns: minmax(280px, 0.8fr) 1.2fr;
+    gap: 32px;
+    padding: 20px;
+  }
+
+  .place img {
+    aspect-ratio: 4 / 3;
+  }
+}

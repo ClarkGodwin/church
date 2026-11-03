@@ -46,6 +46,11 @@
   gap: clamp(8px, 1vw, 14px);
 }
 
+.hero .contact-btn {
+  background: var(--green);
+  color: #fff;
+}
+
 /* On narrow phones, stack equally wide actions for a predictable touch target. */
 @media (max-width: 480px) {
   .hero-actions {

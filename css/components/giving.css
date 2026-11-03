@@ -1,0 +1,16 @@
+/* Donation copy action and accessible live feedback message. */
+.cp {
+  padding: 6px clamp(7px, 0.7vw, 10px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--ink);
+  font: 600 clamp(12px, 1vw, 14px) Figtree, sans-serif;
+  cursor: pointer;
+}
+
+.copy-status {
+  min-height: 1.5em;
+  color: var(--muted);
+  font-size: var(--text-small);
+}

@@ -1,0 +1,16 @@
+/* Full-bleed mission callout; its inner text remains readable on wide screens. */
+.mission {
+  max-width: none;
+  padding: 70px 5vw;
+  background: var(--blue);
+  color: #fff;
+}
+
+.mission > div {
+  max-width: 760px;
+  margin: auto;
+}
+
+.mission p {
+  font-size: clamp(17px, calc(0.35vw + 16px), 21px);
+}
