@@ -1,0 +1,37 @@
+.hero {
+  position: relative;
+  display: flex;
+  min-height: 92vh;
+  align-items: flex-end;
+  color: #fff;
+  background: #10204f url("../../images/worship_1.jpeg") center / cover no-repeat;
+}
+
+.hero::before {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgb(10 20 55 / 30%), rgb(10 20 55 / 90%));
+  content: "";
+}
+
+.hero > div {
+  position: relative;
+  max-width: 760px;
+  padding: 0 5vw 8vh;
+}
+
+.hero small {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+.hero h1 {
+  margin: 6px 0 14px;
+  font-size: clamp(40px, 9vw, 80px);
+  font-weight: 800;
+}
+
+.hero p {
+  margin: 0 0 22px;
+  font-size: 21px;
+}

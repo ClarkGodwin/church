@@ -1,0 +1,37 @@
+.btn {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  padding: 15px 26px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--gold);
+  color: #1a1405;
+  font: 700 18px Figtree, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn.o {
+  border: 2px solid currentColor;
+  background: transparent;
+  color: inherit;
+}
+
+.place .btn {
+  background: var(--blue);
+  color: #fff;
+}
+
+.pred .btn:first-child {
+  background: #c4302b;
+  color: #fff;
+}
+
+.pred .btn .todo {
+  color: #14213d;
+}
+
+.ct .btn:first-of-type {
+  background: #25a244;
+  color: #fff;
+}

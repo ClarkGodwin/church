@@ -1,0 +1,185 @@
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 72px 5vw;
+}
+
+h2 {
+  margin-bottom: 14px;
+  font-size: clamp(30px, 5.5vw, 44px);
+}
+
+.lead {
+  max-width: 600px;
+  margin: 0 0 30px;
+  color: var(--muted);
+}
+
+.card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--card);
+}
+
+.times {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.times .big {
+  color: var(--blue);
+  font-family: Fraunces, Georgia, serif;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.place {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  gap: 22px;
+  margin-top: 20px;
+}
+
+.place img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.mission {
+  max-width: none;
+  padding: 70px 5vw;
+  background: var(--blue);
+  color: #fff;
+}
+
+.mission > div {
+  max-width: 760px;
+  margin: auto;
+}
+
+.mission p {
+  font-size: 21px;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.photos figure {
+  margin: 0;
+}
+
+.photos img {
+  width: 100%;
+  height: 100%;
+  min-height: 240px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.photos figcaption {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.photos .wide {
+  grid-column: 1 / -1;
+}
+
+.pred {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.acc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 6px;
+}
+
+.acc h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 0;
+  border-top: 1px solid var(--line);
+}
+
+.row span {
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.row b {
+  font-size: 19px;
+  text-align: right;
+  word-break: break-all;
+}
+
+.todo {
+  padding: 0 6px;
+  border-radius: 6px;
+  background: var(--warn);
+}
+
+.note {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.ct .btn {
+  margin: 14px 8px 0 0;
+  font-size: 17px;
+}
+
+footer {
+  padding: 36px 5vw;
+  background: #0f1b3a;
+  color: #cfd5ea;
+  font-size: 16px;
+  text-align: center;
+}
+
+footer > b {
+  display: block;
+  color: #fff;
+  font-family: Fraunces, Georgia, serif;
+  font-size: 21px;
+}
+
+@media (max-width: 700px) {
+  .place {
+    grid-template-columns: 1fr;
+  }
+
+  .place img {
+    max-height: 300px;
+    aspect-ratio: 3 / 2;
+  }
+
+  .photos {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 52px 5vw;
+  }
+}
