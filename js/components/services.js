@@ -1,3 +1,8 @@
+/**
+ * Build the worship schedule and church location section.
+ * Update example times, address text, and the map query when official details change.
+ * @returns {string} HTML markup for the services and location section.
+ */
 export function renderServices() {
   const markup = /* html */ `
     <section id="cultes">

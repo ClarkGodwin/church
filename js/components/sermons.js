@@ -1,3 +1,8 @@
+/**
+ * Build the links to the choir and sermon channels.
+ * Replace the placeholder YouTube handles when the official channels are known.
+ * @returns {string} HTML markup for the sermon links section.
+ */
 export function renderSermons() {
   const markup = /* html */ `
     <section id="predications">

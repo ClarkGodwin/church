@@ -1,3 +1,8 @@
+/**
+ * Build the page cover and its three in-page navigation links.
+ * Keep each href in sync with the id of its destination section.
+ * @returns {string} HTML markup inserted by js/main.js.
+ */
 export function renderHero() {
   const markup = /* html */ `
     <header class="hero">

@@ -1,3 +1,7 @@
+// Translation dictionaries are keyed by the exact French text rendered in components.
+// Keep punctuation, accents, and internal whitespace unchanged; missing keys fall back
+// to French in language-switcher.js. The English and Kirundi dictionaries cover the
+// user-facing text nodes, including headings, buttons, captions, and placeholder details.
 export const englishTranslations = {
   "Murakaza neza · Bienvenue": "Murakaza neza · Welcome",
   "« Venez à moi, vous tous qui êtes fatigués et chargés, et je vous donnerai du repos. » (Matthieu 11:28)": "“Come to me, all you who are weary and burdened, and I will give you rest.” (Matthew 11:28)",
@@ -62,12 +66,16 @@ export const englishTranslations = {
   "Photos : PM Studio 001": "Photos: PM Studio 001"
 };
 
+// Image alt attributes are translated separately because they are not DOM text nodes.
+// Use the original French alt attribute as each key.
 export const englishAltText = {
   "Le bâtiment de l'EPG avec sa tour vitrée et son toit rouge": "The EPG church building with its glass tower and red roof",
   "L'assemblée réunie pour le culte, la chorale sur l'estrade": "The congregation gathered for worship, with the choir on the platform",
   "Choristes souriants chantant ensemble": "Smiling choir members singing together"
 };
 
+// Keep the same French source keys in both dictionaries so translation coverage can be
+// audited consistently; numeric account data and product names remain unchanged.
 export const kirundiTranslations = {
   "Murakaza neza · Bienvenue": "Murakaza neza · Mwakiriwe",
   "« Venez à moi, vous tous qui êtes fatigués et chargés, et je vous donnerai du repos. » (Matthieu 11:28)": "« Nimuze kuri jewe, mwese abananiwe n'abaremerewe, nanje nzobaruhura. » (Matayo 11:28)",
@@ -134,12 +142,15 @@ export const kirundiTranslations = {
   "Photos : PM Studio 001": "Amafoto : PM Studio 001"
 };
 
+// Kirundi equivalents for the same image alt keys used by englishAltText.
 export const kirundiAltText = {
   "Le bâtiment de l'EPG avec sa tour vitrée et son toit rouge": "Inyubakwa y'ishengero EPG ifise umunara w'ibirahure n'igisenge gitukura",
   "L'assemblée réunie pour le culte, la chorale sur l'estrade": "Abantu bateraniye gusenga, umurwi w'abaririmvyi uri imbere",
   "Choristes souriants chantant ensemble": "Abaririmvyi bamwenyura baririmbira hamwe"
 };
 
+// Page title, SEO description, and accessible control labels are selected by language
+// code when the visitor switches language. Keep one entry for every supported language.
 export const languageMetadata = {
   fr: {
     title: "EPG – Bujumbura, Burundi",

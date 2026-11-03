@@ -1,3 +1,9 @@
+/**
+ * Build donation methods and the live status area used by copy-to-clipboard.js.
+ * For every .cp button, data-c is the value copied; keep it identical to the
+ * corresponding displayed account number or code when replacing sample details.
+ * @returns {string} HTML markup for the giving section.
+ */
 export function renderGiving() {
   const markup = /* html */ `
     <section id="dons">

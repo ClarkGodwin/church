@@ -1,3 +1,8 @@
+/**
+ * Build the footer language controls and church attribution.
+ * Each data-l code must be supported by language-switcher.js and translations.js.
+ * @returns {string} HTML markup for the controls and footer.
+ */
 export function renderFooter() {
   const markup = /* html */ `
     <div class="footer-controls">

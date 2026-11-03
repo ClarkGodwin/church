@@ -1,3 +1,8 @@
+/**
+ * Build the church mission callout.
+ * The section is separate so main.js can move it without editing other components.
+ * @returns {string} HTML markup for the mission section.
+ */
 export function renderMission() {
   const markup = /* html */ `
     <section class="mission">

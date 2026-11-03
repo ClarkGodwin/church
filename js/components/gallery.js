@@ -1,3 +1,9 @@
+/**
+ * Build the photo gallery.
+ * When adding an image, provide both a visible caption and a descriptive alt attribute;
+ * add that exact French alt text to both image-alt translation dictionaries.
+ * @returns {string} HTML markup for the gallery section.
+ */
 export function renderGallery() {
   const markup = /* html */ `
     <section id="vie">

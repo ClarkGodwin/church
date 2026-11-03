@@ -1,3 +1,9 @@
+/**
+ * Build one contact card using the shared pastor/church/treasurer layout.
+ * Update this template once when the structure of every contact card changes.
+ * @param {string} title French card heading used as a translation-dictionary key.
+ * @returns {string} HTML markup for one contact card.
+ */
 function renderContactCard(title) {
   const markup = /* html */ `
     <div class="card ct">
@@ -11,6 +17,11 @@ function renderContactCard(title) {
   return markup;
 }
 
+/**
+ * Build the contacts section and its three reusable contact cards.
+ * Replace sample names, phone numbers, and wa.me/tel: destinations with approved details.
+ * @returns {string} HTML markup for the contacts section.
+ */
 export function renderContacts() {
   const markup = /* html */ `
     <section id="contacts">
