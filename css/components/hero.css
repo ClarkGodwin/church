@@ -1,3 +1,4 @@
+/* Cover image and content alignment. The overlay keeps white text readable. */
 .hero {
   position: relative;
   display: flex;
@@ -14,6 +15,7 @@
   content: "";
 }
 
+/* Clamp gutters and content width so hero text scales across phone and desktop. */
 .hero > div {
   position: relative;
   width: 100%;
@@ -38,11 +40,13 @@
 }
 
 .hero-actions {
+  /* Let the action buttons wrap naturally on tablet and desktop. */
   display: flex;
   flex-wrap: wrap;
   gap: clamp(8px, 1vw, 14px);
 }
 
+/* On narrow phones, stack equally wide actions for a predictable touch target. */
 @media (max-width: 480px) {
   .hero-actions {
     flex-direction: column;

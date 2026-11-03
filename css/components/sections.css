@@ -1,3 +1,4 @@
+/* Shared pill-shaped link/button base; variants below supply contextual colors. */
 .btn {
   display: inline-block;
   margin: 0;
@@ -11,12 +12,14 @@
   cursor: pointer;
 }
 
+/* Outlined button variant for secondary actions on colored backgrounds. */
 .btn.o {
   border: 2px solid currentColor;
   background: transparent;
   color: inherit;
 }
 
+/* Context-specific button colors keep each section's primary action recognizable. */
 .place .btn {
   background: var(--blue);
   color: #fff;

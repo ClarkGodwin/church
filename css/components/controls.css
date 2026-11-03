@@ -1,9 +1,11 @@
+/* Align the language control to the same content gutter as the footer above it. */
 .footer-controls {
   max-width: 1000px;
   margin: 0 auto;
   padding: 24px 5vw 20px;
 }
 
+/* Compact segmented language selector; active state uses the site's gold accent. */
 .lang {
   display: flex;
   width: fit-content;
@@ -15,6 +17,7 @@
   backdrop-filter: blur(6px);
 }
 
+/* Individual language choices share sizing; ::before draws separators between them. */
 .lang button {
   position: relative;
   min-width: 40px;
@@ -37,11 +40,13 @@
   content: "";
 }
 
+/* aria-pressed is set by the language switcher and marks the selected language. */
 .lang button[aria-pressed="true"] {
   background: var(--gold);
   color: #1a1405;
 }
 
+/* Match the wider desktop section container and its horizontal gutters. */
 @media (min-width: 1000px) {
   .footer-controls {
     max-width: 1400px;
@@ -50,6 +55,7 @@
   }
 }
 
+/* Donation copy action and accessible live feedback message. */
 .cp {
   padding: 6px clamp(7px, 0.7vw, 10px);
   border: 1px solid var(--line);

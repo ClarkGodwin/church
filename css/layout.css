@@ -1,9 +1,11 @@
+/* Shared section width and vertical rhythm. Desktop widens this container below. */
 section {
   max-width: 1000px;
   margin: auto;
   padding: 72px 5vw;
 }
 
+/* Heading and introductory-copy styles reused across content sections. */
 h2 {
   margin-bottom: 14px;
   font-size: clamp(28px, calc(1.3vw + 24px), 44px);
@@ -22,6 +24,7 @@ h2 {
   background: var(--card);
 }
 
+/* Service schedule cards use as many columns as fit at the current width. */
 .times {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -50,6 +53,7 @@ h2 {
   object-fit: cover;
 }
 
+/* Full-bleed mission callout; its inner text remains readable on wide screens. */
 .mission {
   max-width: none;
   padding: 70px 5vw;
@@ -66,6 +70,7 @@ h2 {
   font-size: clamp(17px, calc(0.35vw + 16px), 21px);
 }
 
+/* Gallery cards and image sizing; the desktop breakpoint adds framing and hover. */
 .photos {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -101,6 +106,7 @@ h2 {
   gap: 16px;
 }
 
+/* Donation and contact cards share the same responsive grid. */
 .acc {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -150,6 +156,7 @@ h2 {
   font-size: 17px;
 }
 
+/* Footer intentionally uses a dark surface distinct from the page background. */
 footer {
   padding: 36px 5vw;
   background: #0f1b3a;
@@ -165,6 +172,7 @@ footer > b {
   font-size: var(--text-card-title);
 }
 
+/* Stack location and gallery content on narrow phones; leave wider layouts intact. */
 @media (max-width: 700px) {
   .place {
     grid-template-columns: 1fr;
@@ -184,6 +192,7 @@ footer > b {
   }
 }
 
+/* Spacious desktop layout is enabled at 1000px and capped at a 1400px section width. */
 @media (min-width: 1000px) {
   section {
     max-width: 1400px;
@@ -193,12 +202,14 @@ footer > b {
 
   .times,
   .acc {
+    /* Keep schedule, donation, and contact cards evenly distributed in three columns. */
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
   }
 
   .times .card,
   .acc .card {
+    /* Provide a smooth transition for the hover feedback below. */
     box-shadow: 0 10px 28px rgb(20 33 61 / 6%);
     transition: transform 180ms ease, box-shadow 180ms ease;
   }
@@ -224,6 +235,7 @@ footer > b {
   }
 
   .photos figure {
+    /* Frame each photo as a card while clipping the subtle image zoom. */
     overflow: hidden;
     padding: 10px;
     border: 1px solid var(--line);

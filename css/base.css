@@ -1,3 +1,4 @@
+/* Design tokens: edit these values to update the shared site palette and type scale. */
 :root {
   --bg: #fbfaf6;
   --ink: #14213d;
@@ -16,6 +17,7 @@
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
+/* Follow the visitor's system theme unless a light theme is explicitly selected. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0d1427;
@@ -29,6 +31,7 @@
   }
 }
 
+/* Explicit dark-theme override, available to pages that set data-theme="dark". */
 :root[data-theme="dark"] {
   --bg: #0d1427;
   --ink: #eef0f7;
@@ -40,6 +43,7 @@
   --warn: #3a3317;
 }
 
+/* Global element defaults shared by every component. */
 * {
   box-sizing: border-box;
 }
@@ -77,6 +81,7 @@ a {
   outline-offset: 3px;
 }
 
+/* Avoid animated scrolling for visitors who request reduced motion. */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

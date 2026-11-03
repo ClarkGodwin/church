@@ -1,5 +1,10 @@
+/* CSS entry point linked by index.html; keep feature styles imported here. */
 @import url("./base.css");
+/* Shared section, card, and responsive grid rules. */
 @import url("./layout.css");
+/* Hero background, cover typography, and action-button wrapping. */
 @import url("./components/hero.css");
+/* Shared button variants used by the page sections. */
 @import url("./components/sections.css");
+/* Footer language switcher and donation copy controls. */
 @import url("./components/controls.css");
