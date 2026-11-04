@@ -14,3 +14,13 @@
 .mission p {
   font-size: clamp(17px, calc(0.35vw + 16px), 21px);
 }
+
+@media (max-width: 360px) {
+  .mission {
+    padding: 38px 16px;
+  }
+
+  .mission p {
+    font-size: 15px;
+  }
+}

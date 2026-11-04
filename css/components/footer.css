@@ -1,18 +1,15 @@
-/* Align the language control to the same content gutter as the footer above it. */
-.footer-controls {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 24px 5vw 20px;
-}
-
-/* Compact segmented language selector; active state uses the site's gold accent. */
+/* Keep the language selector accessible at the top-right while scrolling. */
 .lang {
+  position: fixed;
+  top: calc(12px + env(safe-area-inset-top, 0px));
+  right: calc(12px + env(safe-area-inset-right, 0px));
+  z-index: 6;
   display: flex;
+  flex-direction: column;
   width: fit-content;
-  margin-left: auto;
-  align-items: center;
+  align-items: stretch;
   padding: 4px;
-  border-radius: 9px;
+  border-radius: 12px;
   background: rgb(10 20 55 / 78%);
   backdrop-filter: blur(6px);
 }
@@ -20,8 +17,8 @@
 /* Individual language choices share sizing; ::before draws separators between them. */
 .lang button {
   position: relative;
-  min-width: 40px;
-  padding: 8px 10px;
+  min-width: 82px;
+  padding: 8px 12px;
   border: 0;
   border-radius: 8px;
   background: transparent;
@@ -32,10 +29,10 @@
 
 .lang button + button::before {
   position: absolute;
-  top: 25%;
-  bottom: 25%;
-  left: 0;
-  width: 1px;
+  top: 0;
+  right: 20%;
+  left: 20%;
+  height: 1px;
   background: #45413b;
   content: "";
 }
@@ -62,10 +59,14 @@ footer > b {
   font-size: var(--text-card-title);
 }
 
-@media (min-width: 1000px) {
-  .footer-controls {
-    max-width: 1400px;
-    padding-right: clamp(40px, 5vw, 72px);
-    padding-left: clamp(40px, 5vw, 72px);
+@media (max-width: 360px) {
+  .lang button {
+    min-width: 74px;
+    padding: 7px 9px;
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 28px 16px;
   }
 }

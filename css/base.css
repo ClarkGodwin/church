@@ -59,6 +59,14 @@ body {
   font: var(--text-body)/1.65 Figtree, system-ui, sans-serif;
 }
 
+@media (max-width: 360px) {
+  :root {
+    --text-body: 15px;
+    --text-small: 13px;
+    --text-card-title: 18px;
+  }
+}
+
 img {
   max-width: 100%;
   display: block;

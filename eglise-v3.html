@@ -48,11 +48,12 @@ h2{font-size:clamp(30px,5.5vw,44px);margin-bottom:14px}
 .todo{background:var(--warn);border-radius:6px;padding:0 6px}
 .note{font-size:16px;color:var(--muted);margin-top:16px}
 .ct .btn{margin:14px 8px 0 0;font-size:17px}
-.lang{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));right:14px;z-index:6;display:flex;background:rgba(10,20,55,.78);border-radius:999px;padding:4px;backdrop-filter:blur(6px)}.lang button{border:0;background:transparent;color:#fff;font:700 15px Figtree,sans-serif;padding:8px 14px;border-radius:999px;cursor:pointer}.lang button[aria-pressed="true"]{background:var(--gold);color:#1a1405}
+.lang{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));right:calc(12px + env(safe-area-inset-right,0px));z-index:6;display:flex;flex-direction:column;align-items:stretch;min-width:82px;background:rgba(10,20,55,.78);border-radius:12px;padding:4px;backdrop-filter:blur(6px)}.lang button{border:0;background:transparent;color:#fff;font:700 15px/1 Figtree,sans-serif;padding:8px 12px;border-radius:8px;cursor:pointer}.lang button + button{border-top:1px solid #45413b}.lang button[aria-pressed="true"]{background:var(--gold);color:#1a1405}
 .wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:#25a244;color:#fff;border-radius:999px;padding:14px 20px;font-weight:700;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:5}
 footer{background:#0f1b3a;color:#cfd5ea;padding:36px 5vw 90px;text-align:center;font-size:16px}
 footer b{display:block;font-family:Fraunces,serif;color:#fff;font-size:21px}
 @media(max-width:700px){.place{grid-template-columns:1fr}.place img{aspect-ratio:3/2;max-height:300px}.photos{grid-template-columns:1fr}section{padding:52px 5vw}}
+@media(max-width:360px){body{font-size:15px;line-height:1.55}section{padding:38px 16px}h2{font-size:clamp(23px,7vw,26px);margin-bottom:10px}.lead{margin-bottom:20px}.card{padding:14px;border-radius:12px}.times,.acc{grid-template-columns:minmax(0,1fr);gap:12px}.acc h3{font-size:18px;margin-bottom:8px}.row{flex-wrap:wrap;gap:6px 8px}.row b{max-width:100%;font-size:15px}.row .cp{margin-left:auto}.note{font-size:13px;margin-top:12px}.btn{padding:10px 12px;font-size:14px}.pred{gap:10px}.photos{gap:10px}.photos img{min-height:180px}.place{gap:16px;margin-top:16px}.mission{padding:38px 16px}.mission p{font-size:15px}.hero>div{padding:0 16px 5vh}.hero h1{font-size:36px;margin-bottom:10px}.hero p{font-size:15px;margin-bottom:16px}.hero-actions{gap:8px}.lang button{min-width:74px;padding:7px 9px;font-size:14px}footer{padding:28px 16px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>

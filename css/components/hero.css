@@ -67,6 +67,26 @@
   }
 }
 
+@media (max-width: 360px) {
+  .hero > div {
+    padding: 0 16px 5vh;
+  }
+
+  .hero h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+  }
+
+  .hero p {
+    margin-bottom: 16px;
+    font-size: 15px;
+  }
+
+  .hero-actions {
+    gap: 8px;
+  }
+}
+
 /* Give desktop navigation enough room to keep all three actions on one row. */
 @media (min-width: 1000px) {
   .hero > div {
